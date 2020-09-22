@@ -1,0 +1,16 @@
+*
+{
+    padding-top: 30px;
+}
+
+.col-3
+{
+    text-align: center;
+    background-color: aquamarine;
+}
+
+.col-9
+{
+    text-align: center;
+    background-color: blueviolet;
+}
