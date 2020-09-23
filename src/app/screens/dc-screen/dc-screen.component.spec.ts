@@ -1,20 +1,20 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { PrincipalComponent } from './principal.component';
+import { DcScreenComponent } from './dc-screen.component';
 
-describe('PrincipalComponent', () => {
-  let component: PrincipalComponent;
-  let fixture: ComponentFixture<PrincipalComponent>;
+describe('DcScreenComponent', () => {
+  let component: DcScreenComponent;
+  let fixture: ComponentFixture<DcScreenComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ PrincipalComponent ]
+      declarations: [ DcScreenComponent ]
     })
     .compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(PrincipalComponent);
+    fixture = TestBed.createComponent(DcScreenComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

@@ -1,0 +1,14 @@
+.container{
+    background: cadetblue;
+}
+.row{
+    width: 100%;
+    height: 500px;
+}
+
+.container .row col {
+    margin:100px;
+    background: coral;
+    width: 100%;
+    height: 500px;
+}

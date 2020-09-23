@@ -14,7 +14,7 @@
 .navbar
 {
     background-color: rgb(221, 201, 17);
-    position: fixed;
+    position: relative;
     width: 100%;
     z-index: 9999;
 }
@@ -44,5 +44,10 @@
 
 .dropdown-menu
 {
-    background-color: rgb(221, 201, 17);
+    background-color: rgba(255, 255, 250, 0.904);
+    
+    
+}
+.dropdown-menu a:hover{
+    background-color:rgb(221, 201, 17);;
 }
