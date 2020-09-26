@@ -10,6 +10,8 @@ import { CuentaScreenComponent } from './screens/cuenta-screen/cuenta-screen.com
 import { CarroComprasScreenComponent } from './screens/carro-compras-screen/carro-compras-screen.component';
 import { DcScreenComponent } from './screens/dc-screen/dc-screen.component';
 import { MarvelScreenComponent } from './screens/marvel-screen/marvel-screen.component';
+import { AnimeScreenComponent } from './screens/anime-screen/anime-screen.component';
+import { ComicsScreenComponent } from './screens/comics-screen/comics-screen.component';
 
 @NgModule({
   declarations: [
@@ -21,6 +23,8 @@ import { MarvelScreenComponent } from './screens/marvel-screen/marvel-screen.com
     CarroComprasScreenComponent,
     DcScreenComponent,
     MarvelScreenComponent,
+    AnimeScreenComponent,
+    ComicsScreenComponent,
   ],
   imports: [
     BrowserModule,
