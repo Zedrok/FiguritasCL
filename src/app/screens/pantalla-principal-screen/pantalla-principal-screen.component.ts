@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-pantalla-principal-screen',
-  templateUrl: './pantalla-principal-screen.component.html',
+  templateUrl:'./pantalla-principal-screen.component.html',
   styleUrls: ['./pantalla-principal-screen.component.css']
 })
 export class PantallaPrincipalScreenComponent implements OnInit {

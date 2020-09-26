@@ -7,8 +7,8 @@ import { MarvelScreenComponent } from './screens/marvel-screen/marvel-screen.com
 import { PantallaPrincipalScreenComponent } from './screens/pantalla-principal-screen/pantalla-principal-screen.component';
 
 const routes: Routes = [
-  /**{ path: '', redirectTo: '/inicio', pathMatch: 'full' },
-  { path: '**', redirectTo: '/inicio', pathMatch: 'full' },*/
+  { path: '', redirectTo: '/inicio', pathMatch: 'full' },
+  /*{ path: '**', redirectTo: '/inicio', pathMatch: 'full' },*/
   { path: 'inicio', component: PantallaPrincipalScreenComponent },
   { path: 'dc', component: DcScreenComponent },
   { path: 'marvel', component: MarvelScreenComponent},
@@ -22,3 +22,4 @@ const routes: Routes = [
   exports: [RouterModule]
 })
 export class AppRoutingModule { }
+
