@@ -3,7 +3,7 @@
     box-sizing: border-box;
   }
   
-@media (min-width:1080px){
+@media (min-width:1000px){
     main {
         background: rgba(240, 240, 240, 0.671);
          padding: 5em ;
@@ -35,6 +35,9 @@
         margin-bottom: 0;
         border-bottom-color: rgb(187,0,0);
     } 
+    #date{
+        margin-left: 10px;
+    }
     .validated-input:valid {
         margin-bottom: 0;
         border-bottom-color: rgb(73, 211, 19);
@@ -65,7 +68,7 @@
 
 }
 
-@media (max-width:900px){
+@media (max-width:999px){
     main{
         background: rgba(240, 240, 240, 0.671);
         padding: 50px;         

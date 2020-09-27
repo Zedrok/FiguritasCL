@@ -1,4 +1,4 @@
-@media (min-width: 1301px) {
+@media (min-width: 1270px) {
     .cabecera
     {
         padding: 0;
@@ -20,14 +20,66 @@
         z-index: 9999;
     }
    .btn {
-       margin-left: 10px;
+       margin-left:10px ; 
+   }
+   .form-inline{
+       padding-left: 200px;
    }
    
+   
 
-    .form-inline
+
+    /**MENU**/
+    .nav-item
     {
-        padding-left: 200px;
+        padding-left: 70px;
+        margin-right: 0;
     }
+
+    .nav-link
+    {
+        color: black;
+    }
+
+    .dropdown-menu
+    {
+        background-color: rgba(255, 255, 250, 0.904);
+        
+        
+    }
+    .dropdown-menu a:hover{
+        background-color:#E6DF44;
+    }
+}
+@media (min-width: 1000px) {
+    .cabecera
+    {
+        padding: 0;
+        margin: 0;
+        text-decoration: none;
+        list-style: none;
+    }
+
+    .logo
+    {
+        height: 50px;
+    }
+
+    .navbar
+    {
+        background-color:#E6DF44;
+        position: relative;
+        width: 100%;
+        z-index: 9999;
+    }
+   .btn {
+       margin-left:10px ;
+       
+   }
+   .form-inline{
+       padding-left: 100px;
+   }
+   
 
 
     /**MENU**/
@@ -51,7 +103,7 @@
         background-color:#E6DF44;
     }
 }
-@media (max-width:300px){
+@media (min-width:300px){
 
     
     .cabecera
@@ -76,23 +128,14 @@
     }
    
     .btn {
-        
-        display: inline-block;
-        border-color:#063852;
-        color: rgb(33, 37, 41);
-        margin:10px;
-        user-select: none;
-        background-color: rgb(0,0,0,0%);
-       
-        border-radius: .25rem;
-        transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+        margin-left:0px;
+        margin-right: 0px;
     }
 
     .form-inline
     {
-        padding-left: 50px;
-        margin-right: 100px;
-        padding-right:100px;
+       margin-right:70px;
+       padding-right:10px;
     }
 
 
