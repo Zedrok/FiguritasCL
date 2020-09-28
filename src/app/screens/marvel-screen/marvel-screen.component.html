@@ -1,12 +1,17 @@
-<div class="container-fluid">
-    <div class="row">
-        <div class="col-3">
-            filtros
-        </div>
-        <div class="col-9">
-            <div class="row">
-                
+<div class="container-fluid mt-0">
+    <div class="col-12 mt-0">
+        <div class="row">
+            <div class="col-3" >
+                Filtro 
             </div>
+            <div class="col-9" >
+                <!-- vista de las figuras en tienda/card -->
+                <div class="row row-cols-1 row-cols-md-4">
+                    <div class="row"  *ngFor="let product of producto"> 
+                        <app-producto-card [producto] = "product"></app-producto-card>
+                    </div>
+                </div><!--vista de los productos-->   
+            </div><!--col 9-->
         </div>
-    </div>
-</div>
+    </div> <!--col 12-->  
+</div> <!--fluid-->
