@@ -1,3 +1,4 @@
+
 @media (min-width: 1270px) {
     .cabecera
     {
@@ -22,20 +23,18 @@
    .btn {
        margin-left:10px ; 
    }
+   
    .form-inline{
-       padding-left: 200px;
+       margin-left:100px;
+       padding-left:100px;
+       
    }
-   
-   
-
-
-    /**MENU**/
+   /**MENU**/
     .nav-item
     {
         padding-left: 70px;
-        margin-right: 0;
+        margin-left:100px
     }
-
     .nav-link
     {
         color: black;
@@ -77,7 +76,8 @@
        
    }
    .form-inline{
-       padding-left: 100px;
+
+       padding-left: 120px;
    }
    
 
@@ -128,20 +128,23 @@
     }
    
     .btn {
-        margin-left:0px;
-        margin-right: 0px;
+        
+        position: relative;
+        
     }
 
     .form-inline
     {
-       margin-right:70px;
-       padding-right:10px;
+        padding-left:0;
+        margin-left:0px;
+        margin-right:100px
     }
 
 
     /**MENU**/
     .nav-item
     {
+        margin-left: 0;
         padding-left:0px;
     }
 
