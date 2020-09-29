@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { figurita } from './models/figurita.model';
+import { Figurita } from './models/figurita.model';
 
 @Component({
   selector: 'app-root',
@@ -8,18 +8,18 @@ import { figurita } from './models/figurita.model';
 })
 export class AppComponent {
   title = 'Figuritas-CL';
-  public figuritas: figurita[];
+  public figuritas: Figurita[];
   constructor(){
     this.figuritas = [
       {
-        nombre:'string',
-        marca:'string' ,
-        imgUrl:'string' ,
-        medida:'string' ,
-        ancho:'string' ,
-        origen:'string' 
+        nombre: 'string',
+        marca: 'string' ,
+        imgUrl: 'string' ,
+        medida: 'string' ,
+        ancho: 'string' ,
+        origen: 'string',
       }
-    ]
+    ];
   }
 
 }

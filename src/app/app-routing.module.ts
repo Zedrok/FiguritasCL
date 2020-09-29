@@ -13,11 +13,11 @@ const routes: Routes = [
   /*{ path: '**', redirectTo: '/inicio', pathMatch: 'full' },*/
   { path: 'inicio', component: PantallaPrincipalScreenComponent },
   { path: 'dc', component: DcScreenComponent },
-  { path: 'marvel', component: MarvelScreenComponent},
-  {path:'cuenta',component:CuentaScreenComponent},
-  {path:'carrito',component:CarroComprasScreenComponent},
-  {path:'anime',component:AnimeScreenComponent},
-  {path:'comics',component:ComicsScreenComponent},
+  { path: 'marvel', component: MarvelScreenComponent },
+  { path: 'cuenta', component: CuentaScreenComponent },
+  { path: 'carrito', component: CarroComprasScreenComponent },
+  { path: 'anime', component: AnimeScreenComponent },
+  { path: 'comics', component: ComicsScreenComponent },
 
 ];
 

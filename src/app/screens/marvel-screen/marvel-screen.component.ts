@@ -1,5 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { product } from 'src/app/models/product.model';
+import { Product } from 'src/app/models/product.model';
 
 @Component({
   selector: 'app-marvel-screen',
@@ -7,55 +7,54 @@ import { product } from 'src/app/models/product.model';
   styleUrls: ['./marvel-screen.component.css']
 })
 export class MarvelScreenComponent implements OnInit {
-  
-  
-  public producto : product[];
+
+  public producto: Product[];
 
   constructor() {
-      this.producto= [
+      this.producto = [
         {
-          nombre:'Black Widow',
-          marca:'Tamashii nations' ,
-          imgUrl:'/assets/producto-marvel/figura1.jpg',
-          precio:'30.990' ,
+          nombre: 'Black Widow',
+          marca: 'Tamashii nations' ,
+          imgUrl: '/assets/producto-marvel/figura1.jpg',
+          precio: '30.990' ,
           descripcion: 'Figura de accion' ,
         },
         {
-          nombre:'Wasp',
-          marca:'Tamashii nations' ,
-          imgUrl:'/assets/producto-marvel/figura2.jpg',
-          precio:'20.990' ,
+          nombre: 'Wasp',
+          marca: 'Tamashii nations' ,
+          imgUrl: '/assets/producto-marvel/figura2.jpg',
+          precio: '20.990' ,
           descripcion: 'Figura de accion' ,
         },
         {
-          nombre:'Wolverine',
-          marca:'Diamond select toys' ,
-          imgUrl:'/assets/producto-marvel/figura3.jpg',
-          precio:'34.990' ,
+          nombre: 'Wolverine',
+          marca: 'Diamond select toys' ,
+          imgUrl: '/assets/producto-marvel/figura3.jpg',
+          precio: '34.990' ,
           descripcion: 'Figura de accion' ,
         },
         {
-          nombre:'Spider Gwen',
-          marca:'Diamond select toys' ,
-          imgUrl:'/assets/producto-marvel/figura4.jpg',
-          precio:'33.990' ,
+          nombre: 'Spider Gwen',
+          marca: 'Diamond select toys' ,
+          imgUrl: '/assets/producto-marvel/figura4.jpg',
+          precio: '33.990' ,
           descripcion: 'Figura de accion' ,
         },
         {
-          nombre:'Winter Soldier',
-          marca:'Hasbro' ,
-          imgUrl:'/assets/producto-marvel/figura5.jpg',
-          precio:'30.990' ,
+          nombre: 'Winter Soldier',
+          marca: 'Hasbro' ,
+          imgUrl: '/assets/producto-marvel/figura5.jpg',
+          precio: '30.990' ,
           descripcion: 'Figura de accion' ,
         },
         {
-          nombre:'Thanos',
-          marca:'Diamond select toys' ,
-          imgUrl:'/assets/producto-marvel/figura6.jpg',
-          precio:'59.990' ,
+          nombre: 'Thanos',
+          marca: 'Diamond select toys' ,
+          imgUrl: '/assets/producto-marvel/figura6.jpg',
+          precio: '59.990' ,
           descripcion: 'Figura de accion' ,
         }
-      ]
+      ];
     }
 
   ngOnInit(): void {

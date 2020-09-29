@@ -1,5 +1,4 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
-
 import { CuentaScreenComponent } from './cuenta-screen.component';
 
 describe('CuentaScreenComponent', () => {
