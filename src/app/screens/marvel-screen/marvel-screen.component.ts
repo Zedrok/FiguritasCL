@@ -8,10 +8,10 @@ import { Product } from 'src/app/models/product.model';
 })
 export class MarvelScreenComponent implements OnInit {
 
-  public producto: Product[];
+  public productos: Product[];
 
   constructor() {
-      this.producto = [
+      this.productos = [
         {
           nombre: 'Black Widow',
           marca: 'Tamashii nations' ,

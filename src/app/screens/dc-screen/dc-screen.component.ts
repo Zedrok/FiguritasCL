@@ -8,10 +8,10 @@ import { Product } from 'src/app/models/product.model';
 })
 export class DcScreenComponent implements OnInit {
 
-  public producto: Product[];
+  public productos: Product[];
 
   constructor() {
-    this.producto = [
+    this.productos = [
       {
         nombre: 'Joker',
         marca: 'Diamond' ,
