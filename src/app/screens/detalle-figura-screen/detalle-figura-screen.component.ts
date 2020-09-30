@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { FormControl } from '@angular/forms';
 import { ActivatedRoute } from '@angular/router';
+import { Observable } from 'rxjs';
 import { Product } from 'src/app/models/product.model';
 import { ProductService } from 'src/app/services/product/product.service';
 
@@ -10,7 +12,9 @@ import { ProductService } from 'src/app/services/product/product.service';
 })
 export class DetalleFiguraScreenComponent implements OnInit {
   private id: string ;
-  public product: Product ;
+  public product: Product 
+  public comentario:string ;
+  public observableTextArea$:Observable<string> ;
 
   constructor(
     private productService:ProductService,
