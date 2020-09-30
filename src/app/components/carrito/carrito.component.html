@@ -1,4 +1,28 @@
-<td><button type="button" class="btn btn-danger pt-1 btn-block px-0 mr-2" style="width: 100px"><i class="fas fa-trash-alt"></i> Eliminar</button></td>
-<td>{{productoEnCarrito.nombre}}</td>
-<td>{{productoEnCarrito.cantidad}}</td>
-<td>${{productoEnCarrito.precio|currency:'CLP'}}</td>
+<div class="alert alert-info" *ngIf="productosEnCarrito.length ===0">No se han agregado productos al carrito</div>
+
+<div class="container-flex" *ngIf="productosEnCarrito.length > 0 ">
+    <div class="row ml-2">
+        <div class="col-8">
+            <table class="table table-hover">
+                <thead>
+                    <th scope="col" style="width:8em">Eliminar</th>
+                    <th scope="col">Nombre del Producto</th>
+                    <th scope="col" style="width:8em">Cantidad</th>
+                    <th scope="col" style="width:8em">Precio</th>
+                </thead>
+                <tbody>
+                    <tr>
+                        asdasd
+                    </tr>
+                </tbody>
+            </table>
+        </div> <!--col-12-->
+        <div class="col-3">
+            <div class="text-primary text-right mr-5">
+                <p class="font-weight-bold mt-2">Subtotal.</p> <hr/>
+                <p>{{ totalCarrito | currency:"CLP" }}</p>
+                <button type="button" class="btn btn-primary">Continuar a Despacho</button>
+        </div>
+    </div> <!--Row-->
+</div>
+

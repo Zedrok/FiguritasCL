@@ -15,6 +15,7 @@ import { ComicsScreenComponent } from './screens/comics-screen/comics-screen.com
 import { ProductoCardComponent } from './components/producto-card/producto-card.component';
 import { DetalleFiguraScreenComponent } from './screens/detalle-figura-screen/detalle-figura-screen.component';
 import { CarritoComponent } from './components/carrito/carrito.component';
+import { ProductosCarritoComponent } from './components/carrito/productos-carrito/productos-carrito.component';
 
 @NgModule({
   declarations: [
@@ -31,6 +32,7 @@ import { CarritoComponent } from './components/carrito/carrito.component';
     ProductoCardComponent,
     DetalleFiguraScreenComponent,
     CarritoComponent,
+    ProductosCarritoComponent,
   ],
   imports: [
     BrowserModule,

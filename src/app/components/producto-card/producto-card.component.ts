@@ -1,5 +1,7 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { Product } from 'src/app/models/product.model';
+import { MessengerService } from '../../services/messenger/messenger.service';
+
 
 @Component({
   selector: 'app-producto-card',
@@ -15,5 +17,4 @@ export class ProductoCardComponent implements OnInit {
 
   ngOnInit(): void {
   }
-
 }

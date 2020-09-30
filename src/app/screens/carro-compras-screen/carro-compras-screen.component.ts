@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ProductoCarrito } from '../../models/productoCarrito.model';
+import { MessengerService } from '../../services/messenger/messenger.service';
 
 @Component({
   selector: 'app-carro-compras-screen',
@@ -12,33 +13,10 @@ export class CarroComprasScreenComponent implements OnInit {
   public productosEnCarrito: ProductoCarrito[];
   public totalCarrito: number;
 
-  constructor(){
+  constructor(private msg: MessengerService){
     this.totalCarrito = 0;
   }
 
   ngOnInit(): void {
-    this.productosEnCarrito = [{
-        _id: 'A1',
-        nombre: 'Son Goku',
-        cantidad: 1,
-        precio: 95990 ,
-      },
-      {
-        _id: '2',
-        nombre: 'Jiren',
-        cantidad: 1,
-        precio: 29990,
-      },
-      {
-        _id: 'A3',
-        nombre: 'Naruto Uzumaki',
-        cantidad: 2,
-        precio: 45990 ,
-      },
-    ];
-
-    this.productosEnCarrito.forEach( productoEnCarrito => {
-      this.totalCarrito += (productoEnCarrito.cantidad * productoEnCarrito.precio );
-    });
   }
 }
