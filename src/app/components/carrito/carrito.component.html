@@ -11,8 +11,8 @@
                     <th scope="col" style="width:8em">Precio</th>
                 </thead>
                 <tbody>
-                    <tr>
-                        asdasd
+                    <tr *ngFor="let productoEnCarrito of productosEnCarrito"
+                        app-productos-carrito [productoEnCarrito]="productoEnCarrito">
                     </tr>
                 </tbody>
             </table>
@@ -21,8 +21,8 @@
             <div class="text-primary text-right mr-5">
                 <p class="font-weight-bold mt-2">Subtotal.</p> <hr/>
                 <p>{{ totalCarrito | currency:"CLP" }}</p>
-                <button type="button" class="btn btn-primary">Continuar a Despacho</button>
-        </div>
+                <button type="button" class="btn btn-primary mb-5">Continuar a Despacho</button>
+        </div> <!--col-3-->
     </div> <!--Row-->
 </div>
 

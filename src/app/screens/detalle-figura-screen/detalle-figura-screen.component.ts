@@ -26,19 +26,10 @@ export class DetalleFiguraScreenComponent implements OnInit {
   ngOnInit(): void {
     this.id = this.activatedRouted.snapshot.params.id;
     this.product = this.productService.getByID(this.id) ;
-    console.log(this.product.nombre);
-    console.log(this.product.descripcion);
-    console.log(this.product.imgUrl);
-    console.log(this.product.marca);
-    console.log(this.product.precio);
-
-    this.msg.getMsg().subscribe( (producto) => {
-      console.log(producto);
-      });
-    }
-
-    // tslint:disable-next-line: typedef
-  datosAgregarAlCarrito(){
-    this.msg.sendMsg(this.product);
   }
+
+    datosAgregarAlCarrito(): void{
+      this.msg.sendMsg(this.product);
+      console.log(this.product);
+    }
 }
