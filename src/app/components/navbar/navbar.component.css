@@ -1,5 +1,5 @@
 
-@media (min-width: 1270px) {
+@media (max-width: 1400px) {
     .cabecera
     {
         padding: 0;
@@ -25,16 +25,30 @@
    }
    
    .form-inline{
-       margin-left:100px;
+       margin-left:0px;
+       left:30px;
+       margin-right: 0px;
        padding-left:100px;
        
    }
-   /**MENU**/
-    .nav-item
+   /**MENU*.nav-item
     {
         padding-left: 70px;
         margin-left:100px
+    }*/
+    .navbar ul {
+        margin-left: 20px;
+        padding-left: 120px;
+
     }
+    .navbar ul li {
+        margin-right: 50px;
+        margin-left:50px;
+    }
+    .navbar ul li a:hover{
+        color: lavenderblush;
+    }
+    
     .nav-link
     {
         color: black;
@@ -50,7 +64,7 @@
         background-color:#E6DF44;
     }
 }
-@media (min-width: 1000px) {
+@media (max-width: 1000px) {
     .cabecera
     {
         padding: 0;
@@ -103,7 +117,7 @@
         background-color:#E6DF44;
     }
 }
-@media (min-width:300px){
+@media (max-width:300px){
 
     
     .cabecera
