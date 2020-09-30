@@ -1,0 +1,31 @@
+#imagen{
+   background: wheat;
+
+
+}
+#detalle{
+    background: red;
+    width: 100%;
+    height: 300px;
+}
+#comprar{
+    width: 100%;
+    height: 100px;
+}
+.btn{
+    padding-top: 100px;
+}
+#Resumen{
+    width: 100%;
+    height: 600px;
+    background: cornflowerblue;
+}
+#Feedback{
+    width: 100%;
+    height: 400px;
+    background: darkgreen;
+}
+li{
+    text-decoration: none;
+    list-style: none;
+}

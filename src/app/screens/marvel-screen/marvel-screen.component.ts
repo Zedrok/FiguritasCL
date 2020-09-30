@@ -13,6 +13,7 @@ export class MarvelScreenComponent implements OnInit {
   constructor() {
       this.productos = [
         {
+          _id:'00',
           nombre: 'Black Widow',
           marca: 'Tamashii nations' ,
           imgUrl: '/assets/producto-marvel/figura1.jpg',
@@ -20,6 +21,7 @@ export class MarvelScreenComponent implements OnInit {
           descripcion: 'Figura de accion' ,
         },
         {
+          _id:'01',
           nombre: 'Wasp',
           marca: 'Tamashii nations' ,
           imgUrl: '/assets/producto-marvel/figura2.jpg',
@@ -27,6 +29,7 @@ export class MarvelScreenComponent implements OnInit {
           descripcion: 'Figura de accion' ,
         },
         {
+          _id:'02',
           nombre: 'Wolverine',
           marca: 'Diamond select toys' ,
           imgUrl: '/assets/producto-marvel/figura3.jpg',
@@ -34,6 +37,7 @@ export class MarvelScreenComponent implements OnInit {
           descripcion: 'Figura de accion' ,
         },
         {
+          _id:'03',
           nombre: 'Spider Gwen',
           marca: 'Diamond select toys' ,
           imgUrl: '/assets/producto-marvel/figura4.jpg',
@@ -41,6 +45,7 @@ export class MarvelScreenComponent implements OnInit {
           descripcion: 'Figura de accion' ,
         },
         {
+          _id:'04',
           nombre: 'Winter Soldier',
           marca: 'Hasbro' ,
           imgUrl: '/assets/producto-marvel/figura5.jpg',
@@ -48,6 +53,7 @@ export class MarvelScreenComponent implements OnInit {
           descripcion: 'Figura de accion' ,
         },
         {
+          _id:'05',
           nombre: 'Thanos',
           marca: 'Diamond select toys' ,
           imgUrl: '/assets/producto-marvel/figura6.jpg',

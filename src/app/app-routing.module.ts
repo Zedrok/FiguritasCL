@@ -5,6 +5,7 @@ import { CarroComprasScreenComponent } from './screens/carro-compras-screen/carr
 import { ComicsScreenComponent } from './screens/comics-screen/comics-screen.component';
 import { CuentaScreenComponent } from './screens/cuenta-screen/cuenta-screen.component';
 import { DcScreenComponent } from './screens/dc-screen/dc-screen.component';
+import { DetalleFiguraScreenComponent } from './screens/detalle-figura-screen/detalle-figura-screen.component';
 import { MarvelScreenComponent } from './screens/marvel-screen/marvel-screen.component';
 import { PantallaPrincipalScreenComponent } from './screens/pantalla-principal-screen/pantalla-principal-screen.component';
 
@@ -18,6 +19,8 @@ const routes: Routes = [
   { path: 'carrito', component: CarroComprasScreenComponent },
   { path: 'anime', component: AnimeScreenComponent },
   { path: 'comics', component: ComicsScreenComponent },
+  {path: 'detalleFigurita/:id',component: DetalleFiguraScreenComponent},
+  { path: '**', redirectTo: '/inicio', pathMatch: 'full' },
 
 ];
 

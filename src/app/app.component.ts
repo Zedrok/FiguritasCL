@@ -10,16 +10,7 @@ export class AppComponent {
   title = 'Figuritas-CL';
   public figuritas: Figurita[];
   constructor(){
-    this.figuritas = [
-      {
-        nombre: 'string',
-        marca: 'string' ,
-        imgUrl: 'string' ,
-        medida: 'string' ,
-        ancho: 'string' ,
-        origen: 'string',
-      }
-    ];
+  
   }
 
 }
