@@ -3,8 +3,6 @@
         <div class="row mt-10 mb-10" id="Resumen">
             <div class="col-6 " id="imagen">
                 <img src="{{product.imgUrl}}" class="card-img-top mb-1 ml-1 mr-1 my-2  pl-3 pr-3 ">
-
-
             </div>
             <div class="col-6">
                 <div class="row" id="detalle">
@@ -23,9 +21,28 @@
 
                 </div>
                 <div class="row" id="comprar">
-
-                    <button type="submit" class="btn btn-outline-dark"><i class="fas fa-shopping-cart"></i>Añadir al
-                        carro</button>
+                    
+                    <button type="submit" class="btn btn-outline-dark" data-toggle="modal" data-target="#Modal"
+                    (click)="datosAgregarAlCarrito()">
+                        <i class="fas fa-shopping-cart"></i>Añadir al carro
+                    </button>
+        
+                    <div class="modal fade" id="Modal" tabindex="-1" role="dialog" aria-labelledby="Modal" aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                            <h5 class="modal-title" id="Modal">Productos Agregados con éxito!</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                            </div>
+                            <div class="modal-footer flex" style="flex-wrap: nowrap">
+                                <button type="button" class="btn btn-secondary px-3 ml-3 mr-auto" data-dismiss="modal">Seguir Comprando.</button>
+                                <button type="button" class="btn btn-primary px-3 ml-auto mr-3" [routerLink]="['/carrito']" data-dismiss="modal">Ir al Carrito de Compras.</button>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
                 </div>
             </div>
 

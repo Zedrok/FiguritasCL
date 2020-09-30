@@ -1,5 +1,7 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { ProductoCarrito } from '../../models/productoCarrito.model';
+import { MessengerService } from 'src/app/services/messenger/messenger.service';
+import { Product } from '../../models/product.model';
 
 @Component({
   // tslint:disable-next-line: component-selector
@@ -9,16 +11,33 @@ import { ProductoCarrito } from '../../models/productoCarrito.model';
 })
 
 export class CarritoComponent implements OnInit {
+  public productosEnCarrito = [];
+  public totalCarrito: number;
 
-  @Input()
-  public productoEnCarrito: ProductoCarrito;
 
 
-  constructor() {
+  constructor(private msg: MessengerService){
+    this.totalCarrito = 0;
   }
 
   ngOnInit(): void {
+    this.msg.getMsg().subscribe( (producto: ProductoCarrito) => {
+      this.agregarProductoAlCarrito(producto);
+    });
   }
 
+  agregarProductoAlCarrito(productoAgregado: ProductoCarrito): void{
+    console.log(productoAgregado);
+    this.productosEnCarrito.push({
+      _id: productoAgregado._id,
+      nombre: productoAgregado.nombre,
+      precio: productoAgregado.precio,
+      cantidad: 1,
+    });
 
+    this.productosEnCarrito.forEach( (producto: ProductoCarrito) => {
+      console.log(producto);
+      this.totalCarrito += producto.cantidad * producto.precio;
+    });
+  }
 }

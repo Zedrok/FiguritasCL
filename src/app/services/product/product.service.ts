@@ -11,7 +11,6 @@ export class ProductService {
   private productos: Product[];
   private productosType: Product[] ;
 
-
   constructor() {
     this.productos = PRODUCT;
 
