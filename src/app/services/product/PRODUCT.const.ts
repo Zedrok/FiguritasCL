@@ -1,9 +1,9 @@
 import { Product } from 'src/app/models/product.model';
 
-export const PRODUCT:Product[]= 
+export const PRODUCT: Product[] =
 [
     {
-        _id:'A1',
+        _id: 'A1',
         nombre: 'Cooler',
         marca: 'Tamashii nations' ,
         imgUrl: '/assets/producto-anime/anime1.jpg',
@@ -12,7 +12,7 @@ export const PRODUCT:Product[]=
         descripcion: 'Figura de accion' ,
       },
       {
-        _id:'A2',
+        _id: 'A2',
         nombre: 'Son Goku',
         marca: 'Tamashii nations' ,
         imgUrl: '/assets/producto-anime/anime2.jpg',
@@ -21,7 +21,7 @@ export const PRODUCT:Product[]=
         descripcion: 'Figura de accion' ,
       },
       {
-        _id:'A3',
+        _id: 'A3',
         nombre: 'Naruto Uzumaki',
         marca: 'Tamashii nations' ,
         imgUrl: '/assets/producto-anime/anime3.jpg',
@@ -30,7 +30,7 @@ export const PRODUCT:Product[]=
         descripcion: 'Figura de accion' ,
       },
       {
-        _id:'A4',
+        _id: 'A4',
         nombre: 'Red Riot',
         marca: 'Bandai' ,
         imgUrl: '/assets/producto-anime/anime4.jpg',
@@ -39,7 +39,7 @@ export const PRODUCT:Product[]=
         descripcion: 'Figura de accion' ,
       },
       {
-        _id:'A5',
+        _id: 'A5',
         nombre: 'Jiren',
         marca: 'Tamashii nations' ,
         imgUrl: '/assets/producto-anime/anime5.jpg',
@@ -48,7 +48,7 @@ export const PRODUCT:Product[]=
         descripcion: 'Figura de accion' ,
       },
       {
-        _id:'A6',
+        _id: 'A6',
         nombre: 'Roronoa Zoro',
         marca: 'Banpresto' ,
         imgUrl: '/assets/producto-anime/anime6.jpg',
@@ -56,5 +56,4 @@ export const PRODUCT:Product[]=
         precio: '35.990' ,
         descripcion: 'Figura de accion' ,
       }
-    ]
-    
+    ];

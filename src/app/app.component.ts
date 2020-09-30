@@ -10,7 +10,7 @@ export class AppComponent {
   title = 'Figuritas-CL';
   public figuritas: Figurita[];
   constructor(){
-  
+
   }
 
 }

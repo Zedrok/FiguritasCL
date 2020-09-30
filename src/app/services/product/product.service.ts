@@ -10,21 +10,21 @@ export class ProductService {
 
   private productos: Product[];
   private productosType: Product[] ;
- 
+
 
   constructor() {
     this.productos = PRODUCT;
-    
+
   }
 
   public getAllProducts(): Product[]{
     return this.productos;
   }
-  public getByID(id : string): Product {
-    return this.productos.find((producto:Product)=>producto._id == id) ;
-    
+
+  public getByID(id: string): Product {
+    return this.productos.find((producto: Product) => producto._id === id);
   }
-  public getByType(tipo : string): Product[]{
+  public getByType(tipo: string): Product[]{
     return this.productos ;
   }
 }
