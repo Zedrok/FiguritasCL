@@ -1,41 +1,211 @@
 <main>
     <div class="container ">
-        <div class="row mt-10 mb-10"id="Resumen">
-            <div class="col-6 " id="imagen"> 
+        <div class="row mt-10 mb-10" id="Resumen">
+            <div class="col-6 " id="imagen">
                 <img src="{{product.imgUrl}}" class="card-img-top mb-1 ml-1 mr-1 my-2  pl-3 pr-3 ">
+<<<<<<< HEAD
+=======
+
+
+>>>>>>> ebfcb3811e40e3d37a2d1629529ad825f9efd223
             </div>
             <div class="col-6">
                 <div class="row" id="detalle">
                     <ul>
-                       <li class="h3">{{product.nombre}}</li>
+                        <li class="h3">{{product.nombre}}</li>
 
                         <li class="h4 muted">Marca: {{product.marca}}</li>
                         <li class="h4">Detalles : {{product.descripcion}}</li>
 
                         <li class="h5 muted">Stock: {{product.stock}}</li>
 
-                    
+
                         <li class="h3">Precio : ${{product.precio}}<span class="h4">+iva</span></li>
 
                     </ul>
-                    
+
                 </div>
                 <div class="row" id="comprar">
+<<<<<<< HEAD
                     <button type="submit" class="btn btn-outline-dark"
                     (click)="datosAgregarAlCarrito()">
                         <i class="fas fa-shopping-cart"></i>Añadir al carro
                     </button>
+=======
+
+                    <button type="submit" class="btn btn-outline-dark"><i class="fas fa-shopping-cart"></i>Añadir al
+                        carro</button>
+>>>>>>> ebfcb3811e40e3d37a2d1629529ad825f9efd223
                 </div>
             </div>
-            
+
         </div>
+        <div class="dropdown-divider"></div>
         <div class="row" id="Feedback">
-            Componente de reseña , detalles tecnicos del producto
-        </div>
-    </div>
-</main>
-   
+            <!--Componente de reseña , detalles tecnicos del producto-->
 
-    
+            <p>Valoracion del producto </p>
+           
+            <div class="container">
+                <h3>
+                    <div [ngSwitch]="  ">
+                        <!--media estrella-->
+                        <div *ngSwitchCase="true">
+                            <i class="fas fa-star-half-alt"></i>
+                            <i class="far fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </div>
+                        <!--una estrella-->
+                        <div *ngSwitchCase="true">
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </div>
+                        <!--1 y media estrella-->
+                        <div *ngSwitchCase="true">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                            <i class="far fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </div>
+                        <!--2 estrella-->
+                        <div *ngSwitchCase="true">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </div>
+                        <!--2 y media estrella-->
+                        <div *ngSwitchCase="true">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                            <i class="far fa-star"></i>
+                            <i class="far fa-star"></i>
+
+                        </div>
+                        <!--3 estrellas estrella-->
+                        <div *ngSwitchCase="true">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </div>
+                        <!--3 y media estrella-->
+                        <div *ngSwitchCase="true">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                            <i class="far fa-star"></i>
+                        </div>
+                        <!--4 estrella-->
+                        <div *ngSwitchCase="true">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </div>
+                        <!--4 y media estrella-->
+                        <div *ngSwitchCase="true">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <!--5 estrella-->
+                        <div *ngSwitchCase="true">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <!--sin estrella-->
+                        <div *ngSwitchDefault>
+                            <i class="far fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </div>
+                    </div>
+                    <!--ngswitch-->
+
+                </h3>
+                <!--se obtiene el promedio de puntos-->
+            </div>
 
 
+            <div class="dropdown-divider"></div>
+
+            <!--
+        estrella con relleno        <i class="fas fa-star"></i>
+        estrella mitad              <i class="fas fa-star-half-alt"></i>
+        estrella sin relleno        <i class="far fa-star"></i> 
+            -->
+
+
+
+
+
+
+
+            <div class="contenido-slider" id="send-comment">
+
+                nueva reseña
+
+
+
+                <!-- eleccion de valoracion del 1 al 5  -->
+                <div class="form-check form-check-inline" id="puntuacion">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1"
+                        value="option1">
+                    <label class="form-check-label" for="inlineRadio1">1</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2"
+                        value="option2">
+                    <label class="form-check-label" for="inlineRadio2">2</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3"
+                        value="option3">
+                    <label class="form-check-label" for="inlineRadio3">3 </label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3"
+                        value="option3">
+                    <label class="form-check-label" for="inlineRadio3">4 </label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3"
+                        value="option3">
+                    <label class="form-check-label" for="inlineRadio3">5 </label>
+                </div>
+
+
+
+                <div class="row">
+                    <p class="comment">
+                        <textarea name="Reseña" id="comment" cols="100" rows="5" required="required"></textarea>
+
+
+                    </p>
+
+
+                    <input class="btn1 btn-success" type="button" value="Input">
+                </div>
+            </div>
+        </div><!-- feedback -->
+    </div><!-- container -->
+</main><!-- main -->
