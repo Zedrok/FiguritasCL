@@ -13,6 +13,7 @@ import { MarvelScreenComponent } from './screens/marvel-screen/marvel-screen.com
 import { AnimeScreenComponent } from './screens/anime-screen/anime-screen.component';
 import { ComicsScreenComponent } from './screens/comics-screen/comics-screen.component';
 import { ProductoCardComponent } from './components/producto-card/producto-card.component';
+import { DetalleFiguraScreenComponent } from './screens/detalle-figura-screen/detalle-figura-screen.component';
 
 @NgModule({
   declarations: [
@@ -27,6 +28,7 @@ import { ProductoCardComponent } from './components/producto-card/producto-card.
     AnimeScreenComponent,
     ComicsScreenComponent,
     ProductoCardComponent,
+    DetalleFiguraScreenComponent,
   ],
   imports: [
     BrowserModule,
