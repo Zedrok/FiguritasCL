@@ -1,5 +1,5 @@
 export interface ProductoCarrito{
-    _id: number|string;
+    _id: string;
     nombre: string ;
     cantidad: number;
     precio: number ;

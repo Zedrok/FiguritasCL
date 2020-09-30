@@ -6,6 +6,7 @@ import { ProductoCarrito } from '../../models/productoCarrito.model';
   templateUrl: './carro-compras-screen.component.html',
   styleUrls: ['./carro-compras-screen.component.css']
 })
+
 export class CarroComprasScreenComponent implements OnInit {
 
   public productosEnCarrito: ProductoCarrito[];
@@ -17,16 +18,22 @@ export class CarroComprasScreenComponent implements OnInit {
 
   ngOnInit(): void {
     this.productosEnCarrito = [{
-        _id: 1,
+        _id: 'A1',
         nombre: 'Son Goku',
         cantidad: 1,
         precio: 95990 ,
       },
       {
-        _id: 2,
+        _id: '2',
         nombre: 'Jiren',
         cantidad: 1,
         precio: 29990,
+      },
+      {
+        _id: 'A3',
+        nombre: 'Naruto Uzumaki',
+        cantidad: 2,
+        precio: 45990 ,
       },
     ];
 
