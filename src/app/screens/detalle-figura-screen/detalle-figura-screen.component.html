@@ -1,4 +1,4 @@
-
+<main>
     <div class="container ">
         <div class="row mt-10 mb-10"id="Resumen">
             <div class="col-6 " id="imagen"> 
@@ -9,17 +9,22 @@
             <div class="col-6">
                 <div class="row" id="detalle">
                     <ul>
-                        <li>{{product.nombre}}</li>
-                        <li>{{product.marca}}</li>
-                        <li >{{product.nombre}}</li>
-                        <li >{{product.precio}}</li>
+                       <li class="h3">{{product.nombre}}</li>
+
+                        <li class="h4 muted">Marca: {{product.marca}}</li>
+                        <li class="h4">Detalles : {{product.descripcion}}</li>
+
+                        <li class="h5 muted">Stock: {{product.stock}}</li>
+
+                    
+                        <li class="h3">Precio : ${{product.precio}}<span class="h4">+iva</span></li>
 
                     </ul>
                     
                 </div>
                 <div class="row" id="comprar">
-                    Aca para comprar
-                    <button type="submit" class="btn btn-outline-dark">Añadir al carro</button>">
+                    
+                    <button type="submit" class="btn btn-outline-dark"><i class="fas fa-shopping-cart"></i>Añadir al carro</button>
                 </div>
             </div>
             
@@ -28,6 +33,8 @@
             Componente de reseña , detalles tecnicos del producto
         </div>
     </div>
+</main>
+   
 
     
 
