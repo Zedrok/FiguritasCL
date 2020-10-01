@@ -15,18 +15,29 @@ export class CuentaScreenComponent implements OnInit {
   
   public passwordLogin:FormControl ;
 
-  public observableCorreoLogin$: Observable<string> ;
-  public observablePasswordLogin$: Observable<string> ;
+  public observableCorreoLogin$: Observable<any> ;
+  public observablePasswordLogin$: Observable<any> ;
+
 
   public usuario: Usuario ;
 
   constructor(private usuarioServices: UsuarioService) { 
+    this.correoLogin= new FormControl ('');
+    this.passwordLogin= new FormControl('') ;
+    this.observablePasswordLogin$ = this.passwordLogin.valueChanges ;
+   
+   
 
   }
 
   ngOnInit(): void {
     this.usuarios = this.usuarioServices.getAllUsuarios() ;
+    this.observablePasswordLogin$.subscribe((pass) =>{
 
+
+    console.log(pass);
+   });
+    
   }
 
  
