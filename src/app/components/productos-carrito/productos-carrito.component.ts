@@ -1,5 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { ProductoCarrito } from '../../../models/productoCarrito.model';
+import { ProductoCarrito } from '../../models/productoCarrito.model';
 
 @Component({
   // tslint:disable-next-line: component-selector

@@ -14,8 +14,7 @@ import { AnimeScreenComponent } from './screens/anime-screen/anime-screen.compon
 import { ComicsScreenComponent } from './screens/comics-screen/comics-screen.component';
 import { ProductoCardComponent } from './components/producto-card/producto-card.component';
 import { DetalleFiguraScreenComponent } from './screens/detalle-figura-screen/detalle-figura-screen.component';
-import { CarritoComponent } from './components/carrito/carrito.component';
-import { ProductosCarritoComponent } from './components/carrito/productos-carrito/productos-carrito.component';
+import { ProductosCarritoComponent } from './components/productos-carrito/productos-carrito.component';
 
 @NgModule({
   declarations: [
@@ -31,7 +30,6 @@ import { ProductosCarritoComponent } from './components/carrito/productos-carrit
     ComicsScreenComponent,
     ProductoCardComponent,
     DetalleFiguraScreenComponent,
-    CarritoComponent,
     ProductosCarritoComponent,
   ],
   imports: [

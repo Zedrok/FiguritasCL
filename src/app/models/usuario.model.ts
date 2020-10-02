@@ -6,6 +6,6 @@ export interface Usuario{
     apellidoM: string;
     numero: string;
     correo: string;
-    direccion: string;
+    direcciones: string[];
     fechaDeNacimiento: string;
 }

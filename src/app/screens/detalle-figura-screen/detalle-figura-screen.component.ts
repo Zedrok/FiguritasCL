@@ -14,7 +14,7 @@ import { MessengerService } from '../../services/messenger/messenger.service';
 })
 export class DetalleFiguraScreenComponent implements OnInit {
   private id: string ;
-  public product: Product 
+  public product: Product;
 
   constructor(
     private productService: ProductService,
