@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ProductoCarrito } from '../../models/productoCarrito.model';
 import { MessengerService } from '../../services/messenger/messenger.service';
+import { FormsModule } from '@angular/forms';
 
 @Component({
   selector: 'app-carro-compras-screen',
@@ -15,7 +16,9 @@ export class CarroComprasScreenComponent implements OnInit {
 
   constructor(private msg: MessengerService){
     this.totalCarrito = 0;
-    this.productosEnCarrito = [{_id: 'A1', nombre: 'Cooler', cantidad: 1, precio: 49990}];
+    this.productosEnCarrito = [
+      { _id: 'A1', nombre: 'Cooler', cantidad: 1, precio: 49990 },
+      { _id: 'A3', nombre: 'Naruto Uzumaki', cantidad: 2, precio: 45990 }];
   }
 
   ngOnInit(): void {
