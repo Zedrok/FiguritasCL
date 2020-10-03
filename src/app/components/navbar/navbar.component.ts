@@ -11,5 +11,9 @@ export class NavbarComponent implements OnInit {
 
   ngOnInit(): void
   {
+
+  }
+  alertaMantenimiento():void{
+    alert("Lo sentimos por el momento no se puede realizar busquedas")
   }
 }

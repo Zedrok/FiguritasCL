@@ -22,7 +22,7 @@ export const PRODUCT: Product[] =
       },
       {
         _id: 'A3',
-        nombre: 'Naruto Uzumaki',
+        nombre: 'Naruto',
         marca: 'Tamashii nations' ,
         imgUrl: '/assets/producto-anime/anime3.jpg',
         stock: 4,

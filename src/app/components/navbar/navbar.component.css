@@ -117,7 +117,7 @@
         background-color:#E6DF44;
     }
 }
-@media (max-width:300px){
+@media (max-width:600px){
 
     
     .cabecera
@@ -151,8 +151,9 @@
     {
         padding-left:0;
         margin-left:0px;
-        margin-right:100px
+        margin-right:0px
     }
+    
 
 
     /**MENU**/
@@ -160,6 +161,9 @@
     {
         margin-left: 0;
         padding-left:0px;
+    }
+    .navbar ul li {
+        margin-left: 0px;
     }
 
     .nav-link

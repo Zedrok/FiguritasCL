@@ -33,4 +33,5 @@ export class DetalleFiguraScreenComponent implements OnInit {
       this.msg.sendMsg(this.product);
       console.log(this.product);
     }
+
 }

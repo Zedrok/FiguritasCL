@@ -39,6 +39,9 @@ export class CuentaScreenComponent implements OnInit {
    });
     
   }
+  alertaMantenimiento():void{
+    alert("Lo sentimos por el momento no se puede iniciar sesion / registrarse")
+  }
 
  
 

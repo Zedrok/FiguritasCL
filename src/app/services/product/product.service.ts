@@ -24,6 +24,7 @@ export class ProductService {
     return this.productos.find((producto: Product) => producto._id === id);
   }
   public getByType(tipo: string): Product[]{
+    
     return this.productos ;
   }
 }
