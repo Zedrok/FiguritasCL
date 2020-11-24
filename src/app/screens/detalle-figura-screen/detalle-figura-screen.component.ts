@@ -2,7 +2,9 @@ import { Component, OnInit } from '@angular/core';
 
 import { ActivatedRoute } from '@angular/router';
 import { Observable } from 'rxjs';
+import { Comment } from 'src/app/models/comentarios.model';
 import { Product } from 'src/app/models/product.model';
+import { CommentService } from 'src/app/services/comment/comment.service';
 import { ProductService } from 'src/app/services/product/product.service';
 import { MessengerService } from '../../services/messenger/messenger.service';
 
@@ -15,9 +17,12 @@ import { MessengerService } from '../../services/messenger/messenger.service';
 export class DetalleFiguraScreenComponent implements OnInit {
   private id: string ;
   public product: Product;
+  public productos: Product[];
+  public comentario: Comment[];
 
   constructor(
     private productService: ProductService,
+    private commentService: CommentService,
     private activatedRouted: ActivatedRoute,
     private msg: MessengerService
     ) {
@@ -27,6 +32,8 @@ export class DetalleFiguraScreenComponent implements OnInit {
   ngOnInit(): void {
     this.id = this.activatedRouted.snapshot.params.id;
     this.product = this.productService.getByID(this.id) ;
+    this.productos = this.productService.getAllProducts();
+    this.comentario = this.commentService.getAllComment();
   }
 
     datosAgregarAlCarrito(): void{

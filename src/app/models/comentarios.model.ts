@@ -1,7 +1,7 @@
-export interface comment{
+export interface Comment{
     _id: string,
     _idProduct: string;
-    reseña: string;
+    comentario: string;
     puntuacion: number;
 }
 

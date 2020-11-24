@@ -4,6 +4,8 @@ footer
     color: black;
     padding: 10px;
     position: relative;
+    margin-bottom: 0;
+    
 }
 
 footer .pie
