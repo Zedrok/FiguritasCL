@@ -20,7 +20,6 @@ const routes: Routes = [
   { path: 'anime', component: AnimeScreenComponent },
   { path: 'comics', component: ComicsScreenComponent },
   { path: 'detalleFigurita/:id', component: DetalleFiguraScreenComponent },
- 
 ];
 
 @NgModule({
