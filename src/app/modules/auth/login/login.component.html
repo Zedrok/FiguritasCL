@@ -1,1 +1,44 @@
-<p>login works!</p>
+<div class=container-fluid>
+    <div class="col">
+        <ol class="breadcrumb">
+            <li><a href=#>Inicio</a></li>
+            <li><a>/Inciar Sesion</a></li>
+        </ol>
+    </div>
+</div>
+<main >
+    <div >
+        <div class="forms">
+            <div class="row">
+                <div class="col"id="colLogin">
+                    <!-------------FORM INICIO SESION------------------------------------------->
+                    <div class="form-section login-form-section" >
+                        <header>
+                            <h1>Iniciar Sesión</h1>
+                        </header>
+                        <form name="login_form"    id="login_form" class="was-validated" >
+                            <!---------------------------CAMPOS----------------->
+                            <div class="fields">
+                                <label for="validationServe07">Correo</label>
+                                <input type="text" class="form-control is-valid" id="validationServe07"   required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" >
+                               <div class="invalid-feedback">
+                                   Introduzca correo valido
+                               </div>
+                                <label for="validationServe08">Contraseña</label>
+                                <input  type="password" class="form-control is-valid" id="validationServe08" required pattern="\S{6,}">
+                                <div class="invalid-feedback">
+                                    contraseña incorrecta
+                                </div>
+                            </div>
+                            <!---------------------------CAMPOS----------------->
+                            <button  type="submit" class="btn btn-outline-primary">Iniciar sesion </button>
+                         
+                         <!-------------FORM REGISTRO SESION------------------------------------------->
+                        </form>
+                    </div>  
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+    
