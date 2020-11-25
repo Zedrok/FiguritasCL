@@ -9,6 +9,9 @@ import { MarvelScreenComponent } from './screens/marvel-screen/marvel-screen.com
 import { PantallaPrincipalScreenComponent } from './screens/pantalla-principal-screen/pantalla-principal-screen.component';
 import { CarroComprasScreenComponent } from './screens/carro-compras-screen/carro-compras-screen.component';
 
+
+
+
 const routes: Routes = [
   { path: '', redirectTo: '/inicio', pathMatch: 'full' },
   /*{ path: '**', redirectTo: '/inicio', pathMatch: 'full' },*/
@@ -20,6 +23,8 @@ const routes: Routes = [
   { path: 'anime', component: AnimeScreenComponent },
   { path: 'comics', component: ComicsScreenComponent },
   { path: 'detalleFigurita/:id', component: DetalleFiguraScreenComponent },
+  { path: 'Login', loadChildren: () => import('./modules/auth/login/login.module').then(m => m.LoginModule) },
+  { path: 'Register', loadChildren: () => import('./modules/auth/register/register.module').then(m => m.RegisterModule) },
 ];
 
 @NgModule({
