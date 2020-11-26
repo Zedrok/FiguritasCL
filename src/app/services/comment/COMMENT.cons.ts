@@ -22,7 +22,7 @@ export const COMMENT : Comment[] =
     },
     {
         _id: 'C4',
-        _idProduct: 'A1',
+        _idProduct: 'A2',
         puntuacion: 5,
         comentario: 'muy buen material , quede muy comforme',   
     }

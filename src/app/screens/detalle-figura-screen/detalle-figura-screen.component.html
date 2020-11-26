@@ -157,8 +157,9 @@
                         </div>
                         <!--puntuacion estrellas-->
                         <div class="row">
+                            <li id = "idpo"> {{idpo}}</li>
                             <div class="container" *ngFor="let comment of comentario">
-                                <app-comentario-producto [comment]="comment"></app-comentario-producto>
+                                <app-comentario-producto  *ngIf ="comment._idProduct === idpo" [comment]="comment"></app-comentario-producto>
                             </div>
                         </div>
                         <div class="row">
@@ -202,12 +203,12 @@
                         <!--agregar comentario-->
                     </div>
 
-                    <div class="col-3" style="overflow-y: scroll;">
+                    <div class="col-3" id="Sugerencia" style="overflow-y: scroll;">
 
-                        <h3>Lo mas vendido</h3>
-                        <div class="row ">
-                            <div class="col-12" >
-                                <app-producto-card *ngFor="let product of productos" [producto]="product"></app-producto-card>
+                        <h3>Sugerencias</h3>
+                        <div class="row" id="Sugerencia">
+                            <div  class="col-12" *ngFor="let product of productos">
+                                <app-producto-card *ngIf ="product._id != idpo" [producto]="product" onclick="location.reload()"></app-producto-card>
 
                             </div>
 

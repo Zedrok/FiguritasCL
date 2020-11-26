@@ -16,9 +16,11 @@ import { MessengerService } from '../../services/messenger/messenger.service';
 })
 export class DetalleFiguraScreenComponent implements OnInit {
   private id: string ;
+  public idpo: string;
   public product: Product;
   public productos: Product[];
   public comentario: Comment[];
+
 
   constructor(
     private productService: ProductService,
@@ -31,6 +33,7 @@ export class DetalleFiguraScreenComponent implements OnInit {
 
   ngOnInit(): void {
     this.id = this.activatedRouted.snapshot.params.id;
+    this.idpo =this.id ;
     this.product = this.productService.getByID(this.id) ;
     this.productos = this.productService.getAllProducts();
     this.comentario = this.commentService.getAllComment();
