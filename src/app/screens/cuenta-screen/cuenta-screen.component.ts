@@ -11,9 +11,9 @@ import { UsuarioService } from 'src/app/services/user/usuario.service';
 })
 export class CuentaScreenComponent implements OnInit {
   public usuarios: Usuario[] ;
-  public correoLogin:FormControl ;
-  
-  public passwordLogin:FormControl ;
+  public correoLogin: FormControl ;
+
+  public passwordLogin: FormControl ;
 
   public observableCorreoLogin$: Observable<any> ;
   public observablePasswordLogin$: Observable<any> ;
@@ -21,28 +21,28 @@ export class CuentaScreenComponent implements OnInit {
 
   public usuario: Usuario ;
 
-  constructor(private usuarioServices: UsuarioService) { 
-    this.correoLogin= new FormControl ('');
-    this.passwordLogin= new FormControl('') ;
+  constructor(private usuarioServices: UsuarioService) {
+    this.correoLogin = new FormControl ('');
+    this.passwordLogin = new FormControl('') ;
     this.observablePasswordLogin$ = this.passwordLogin.valueChanges ;
-   
-   
+
+
 
   }
 
   ngOnInit(): void {
     this.usuarios = this.usuarioServices.getAllUsuarios() ;
-    this.observablePasswordLogin$.subscribe((pass) =>{
+    this.observablePasswordLogin$.subscribe((pass) => {
 
 
     console.log(pass);
    });
-    
+
   }
-  alertaMantenimiento():void{
-    alert("Lo sentimos por el momento no se puede iniciar sesion / registrarse")
+  alertaMantenimiento(): void{
+    alert('Lo sentimos por el momento no se puede iniciar sesion / registrarse');
   }
 
- 
+
 
 }

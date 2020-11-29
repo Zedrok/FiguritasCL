@@ -1,0 +1,25 @@
+[debug] [2020-11-29T07:35:03.271Z] ----------------------------------------------------------------------
+[debug] [2020-11-29T07:35:03.273Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\ZedroK\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2020-11-29T07:35:03.274Z] CLI Version:   8.16.2
+[debug] [2020-11-29T07:35:03.274Z] Platform:      win32
+[debug] [2020-11-29T07:35:03.274Z] Node Version:  v12.18.3
+[debug] [2020-11-29T07:35:03.275Z] Time:          Sun Nov 29 2020 04:35:03 GMT-0300 (GMT-03:00)
+[debug] [2020-11-29T07:35:03.275Z] ----------------------------------------------------------------------
+[debug] [2020-11-29T07:35:03.276Z] 
+[debug] [2020-11-29T07:35:03.282Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2020-11-29T07:35:03.283Z] > authorizing via signed-in user
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Users\ZedroK\Desktop\FiguritasCL
+
+Before we get started, keep in mind:
+
+  * You are initializing in an existing Firebase project directory
+

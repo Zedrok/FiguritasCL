@@ -3,6 +3,7 @@ import { NgModule } from '@angular/core';
 import {AngularFireDatabaseModule} from '@angular/fire/database';
 import {AngularFireModule} from '@angular/fire' ;
 import {AngularFirestoreModule} from '@angular/fire/firestore';
+import { HttpClientModule } from '@angular/common/http';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -17,8 +18,8 @@ import { AnimeScreenComponent } from './screens/anime-screen/anime-screen.compon
 import { ComicsScreenComponent } from './screens/comics-screen/comics-screen.component';
 import { ProductoCardComponent } from './components/producto-card/producto-card.component';
 import { DetalleFiguraScreenComponent } from './screens/detalle-figura-screen/detalle-figura-screen.component';
-import { ProductosCarritoComponent } from './components/productos-carrito/productos-carrito.component';
 import { ComentarioProductoComponent } from './components/comentario-producto/comentario-producto.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -35,12 +36,14 @@ import { ComentarioProductoComponent } from './components/comentario-producto/co
     ComicsScreenComponent,
     ProductoCardComponent,
     DetalleFiguraScreenComponent,
-    ProductosCarritoComponent,
     ComentarioProductoComponent,
+
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    ReactiveFormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -7,6 +7,8 @@ import { Product } from 'src/app/models/product.model';
 import { CommentService } from 'src/app/services/comment/comment.service';
 import { ProductService } from 'src/app/services/product/product.service';
 import { MessengerService } from '../../services/messenger/messenger.service';
+import { CarritoService } from '../../services/carrito/carrito.service';
+import { ProductoCarrito } from '../../models/productoCarrito.model';
 
 
 @Component({
@@ -21,27 +23,25 @@ export class DetalleFiguraScreenComponent implements OnInit {
   public productos: Product[];
   public comentario: Comment[];
 
-
   constructor(
     private productService: ProductService,
     private commentService: CommentService,
     private activatedRouted: ActivatedRoute,
-    private msg: MessengerService
+    private carrito: CarritoService,
     ) {
    }
 
 
   ngOnInit(): void {
     this.id = this.activatedRouted.snapshot.params.id;
-    this.idpo =this.id ;
+    this.idpo = this.id ;
     this.product = this.productService.getByID(this.id) ;
     this.productos = this.productService.getAllProducts();
     this.comentario = this.commentService.getAllComment();
   }
 
-    datosAgregarAlCarrito(): void{
-      this.msg.sendMsg(this.product);
-      console.log(this.product);
-    }
+  agregarCarrito(producto): void{
+    this.carrito.agregarCarrito(producto);
+  }
 
 }
