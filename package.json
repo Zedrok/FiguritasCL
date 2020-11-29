@@ -20,11 +20,14 @@
     "@angular/platform-browser": "~10.1.2",
     "@angular/platform-browser-dynamic": "~10.1.2",
     "@angular/router": "~10.1.2",
+<<<<<<< HEAD
+    "firebase": "^8.1.1",
+=======
     "@angular/service-worker": "~10.1.2",
+>>>>>>> dd0507f4475cc4d2ffa4b3ffcbdb37ee373539f7
     "rxjs": "~6.6.0",
     "tslib": "^2.0.0",
-    "zone.js": "~0.10.2",
-    "firebase": "^7.0.0 || ^8.0.0"
+    "zone.js": "~0.10.2"
   },
   "devDependencies": {
     "@angular-devkit/build-angular": "^0.1002.0",

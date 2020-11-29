@@ -20,7 +20,6 @@ export class DetalleFiguraScreenComponent implements OnInit {
   public productos: Product[];
   public comentario: Comment[];
 
-
   constructor(
     private productService: ProductService,
     private commentService: CommentService,
@@ -41,6 +40,5 @@ export class DetalleFiguraScreenComponent implements OnInit {
   agregarCarrito(producto): void{
     this.carrito.agregarCarrito(producto);
   }
-
 
 }
