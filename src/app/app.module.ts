@@ -19,6 +19,8 @@ import { ProductoCardComponent } from './components/producto-card/producto-card.
 import { DetalleFiguraScreenComponent } from './screens/detalle-figura-screen/detalle-figura-screen.component';
 import { ProductosCarritoComponent } from './components/productos-carrito/productos-carrito.component';
 import { ComentarioProductoComponent } from './components/comentario-producto/comentario-producto.component';
+import { ServiceWorkerModule } from '@angular/service-worker';
+import { environment } from '../environments/environment';
 
 
 @NgModule({
@@ -40,7 +42,8 @@ import { ComentarioProductoComponent } from './components/comentario-producto/co
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production })
   ],
   providers: [],
   bootstrap: [AppComponent]
