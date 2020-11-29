@@ -1,78 +1,47 @@
 <div class=container-fluid>
     <div class="col">
         <ol class="breadcrumb">
-            <li><a href=#>Inicio</a></li>
-            <li><a>/Registrarse</a></li>
+            <li><a href=#>Inicio </a></li>
+            <li><a> / Registrarse</a></li>
         </ol>
     </div>
 </div>
 <main >
-    <div >
-        <div class="forms">
-            <div class="row">
-                <div class="col border-right border-gray" id="colRegistro">
-                    <header>
-                        <h1>Registrarse</h1>
-                        <p class="subhead">Rellene los campos para poder registrarse</p>
-                    </header>
-                    <div class="form-section login-form-section">
-                        <!-------------FORM REGISTRO SESION------------------------------------------->
-                        <form name="signup_form" method="post"  class="std-form login-form form-area" id="signup_form" class="was-validated">
-                            <!-----------------------------CAMPOS------------------------>
-                            <div class="fields">
-                                <label for="validationServer01">Nombre</label>
-                                <input type="text" class="form-control is-valid" id="validationServer01" title ="Debe tener minimo 3 letras mayusculas o minusculas" pattern="^[a-zA-Z]{3,}$" required>
-                                <div class="invalid-feedback" >
-                                    Campo Obligatorio
-                                </div>
-                                <label for="validationServer02">Apellido Paterno</label>
-                                <input type="text" class="form-control is-valid" id="validationServer02" title="Debe tener minimo 3 letras minusculas o mayusculas" pattern="^[a-zA-Z]{3,}$" required>
-                                <div class="invalid-feedback">
-                                    Campo Obligatorio
-                                </div>
-                                <label for="validationServer03">Apellido Materno</label>
-                                <input type="text" class="form-control is-valid" id="validationServer03" title="Debe tener minimo 3 letras minusculas o mayusculas" pattern="^[A-Za-z]{3,}$" required>
-                                
-                                <div class="invalid-feedback">
-                                    Campo Obligatorio
-                                </div>
-                                <label for="validationServer04">Correo</label>
-                                <input type="text" class="form-control is-valid" id="validationServer04"  title="formato correo@gmail.com"pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required >
-                                <div class="invalid-feedback">
-                                    Campo obligatorio
-                                </div>
-                        
-                                
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 mx-auto mt-5">
+                <div class="card-body">
+                    <h1 class="text-center">Registrarse</h1>
+                    <form>
+                        <div class="form-group">
+                            <label>Nombre</label>
+                            <input class="form-control" type="text" placeholder="Por favor ingrese su nombre en este campo">
+                        </div>
+                        <div class="form-group">
+                            <label>Apellido</label>
+                            <input class="form-control" type="text" placeholder="Por favor ingrese su apellido en este campo">
+                        </div>
+                        <div class="form-group">
+                            <label>Telefono De contacto</label>
+                            <input class="form-control" type="tel" placeholder="Por favor ingrese su telefono celular en este campo">
+                        </div>
+                        <div class="form-group">
+                            <label>Correo</label>
+                            <input class="form-control" type="email" placeholder="Por favor ingrese  un  correo válido">
+                        </div>
+                        <div class="form-group">
+                            <label>Contraseña</label>
+                            <input class="form-control" type="password" placeholder="Por favor ingrese una  contraseña de minimo 4 carácteres">
+                        </div>
+                        <button class="btn btn-primary" type="submit">Crear Cuenta</button>
+                    </form>
+                    <div class="form-group mt-3">
+                        <p>¿Ya tienes una cuenta? <a [routerLink]="['/Login']">Iniciar sesión</a></p>
 
-                                <label for="validationServer05">Telefono </label>
-                                <input type="tel" id="validationServer06" title="Seleccione una fecha valida" required>
-                                <div class="class invalid-feedback">
-                                    Campo obligatorio
-                                </div>
-                                <label for="validationServer06">Contraseña</label>
-                                <input type="password" class="form-control is-valid" id="validationServer06"  title="6 caracteres minimo"pattern=\S{6,} required >
-                                <div class="invalid-feedback">
-                                    Campo obligatorio
-                                </div>
-                                    
-                                    
-                            
-    
-                            
-                            </div>
-                            <!-----------------------------CAMPOS------------------------>
-                            <button type="submit" class="btn btn-outline-primary">Registrarse </button>
-                        
-                            
-                            <input type="hidden" id="login_form_redirect_url" name="login_form[redirect_url]" value="/"><input type="hidden" id="login_form__token" name="login_form[_token]" value="TmxGpIEr8sYuUkdppH77rcemRIPdWHFcDD78nuM0WHk">
-                          
-                        </form>
-                         <!-------------FORM REGISTRO SESION------------------------------------------->
                     </div>
-                   
-                   
                 </div>
             </div>
         </div>
     </div>
-</main>
+   
+</main>  

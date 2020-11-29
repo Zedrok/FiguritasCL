@@ -19,7 +19,12 @@ import { ComicsScreenComponent } from './screens/comics-screen/comics-screen.com
 import { ProductoCardComponent } from './components/producto-card/producto-card.component';
 import { DetalleFiguraScreenComponent } from './screens/detalle-figura-screen/detalle-figura-screen.component';
 import { ComentarioProductoComponent } from './components/comentario-producto/comentario-producto.component';
+<<<<<<< HEAD
 import { ReactiveFormsModule } from '@angular/forms';
+=======
+import { ServiceWorkerModule } from '@angular/service-worker';
+import { environment } from '../environments/environment';
+>>>>>>> dd0507f4475cc4d2ffa4b3ffcbdb37ee373539f7
 
 
 @NgModule({
@@ -42,8 +47,12 @@ import { ReactiveFormsModule } from '@angular/forms';
   imports: [
     BrowserModule,
     AppRoutingModule,
+<<<<<<< HEAD
     ReactiveFormsModule,
     HttpClientModule
+=======
+    ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production })
+>>>>>>> dd0507f4475cc4d2ffa4b3ffcbdb37ee373539f7
   ],
   providers: [],
   bootstrap: [AppComponent]
